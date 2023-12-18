@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DigitalPassport</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_account">Create Account</string>
+    <string name="passes">Passes</string>
+    <string name="update_credentials">Update credentials</string>
+    <string name="get_time_credential">Get time credential</string>
+    <string name="get_ready_credential">Get ready credential</string>
+
+
+
+
+
+</resources>

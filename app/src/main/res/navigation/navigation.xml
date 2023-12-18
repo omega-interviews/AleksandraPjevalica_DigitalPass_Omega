@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/userScreenFragment">
+
+    <fragment
+        android:id="@+id/userScreenFragment"
+        android:name="com.example.digitalpassport.UserScreenFragment"
+        android:label="fragment_user_screen"
+        tools:layout="@layout/fragment_user_screen" >
+        <action
+            android:id="@+id/action_userScreenFragment_to_passesListScreenFragment"
+            app:destination="@id/passesListScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passesListScreenFragment"
+        android:name="com.example.digitalpassport.PassesListScreenFragment"
+        android:label="fragment_passes_list_screen"
+        tools:layout="@layout/fragment_passes_list_screen" >
+        <action
+            android:id="@+id/action_passesListScreenFragment_to_fragmentFlashPass"
+            app:destination="@id/fragmentFlashPass" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFlashPass"
+        android:name="com.example.digitalpassport.FragmentFlashPass"
+        android:label="fragment_flash_pass_screen"
+        tools:layout="@layout/fragment_flash_pass_screen" >
+        <action
+            android:id="@+id/action_fragmentFlashPass_to_updateCredentialsScreenFragment"
+            app:destination="@id/updateCredentialsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateCredentialsScreenFragment"
+        android:name="com.example.digitalpassport.UpdateCredentialsScreenFragment"
+        android:label="fragment_update_credentials_screen"
+        tools:layout="@layout/fragment_update_credentials_screen" />
+</navigation>
